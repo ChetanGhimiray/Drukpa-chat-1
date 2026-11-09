@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Drukpa Chat
 
 Drukpa Chat is a Dzongkha-first chatbot with a live Streamlit dashboard. It combines the first reference's short Qwen/Ollama chat setup and example prompts with the second reference's configurable chat providers, local translation pipeline, error handling, and setup checks. The dashboard adds a service status card, new-chat control, suggested questions, and transcript download.
@@ -46,3 +47,6 @@ The checks do not require live model calls. Real translation and chat quality st
 This project combines and adapts the two ZIP projects supplied as references. Their backend and translation ideas are acknowledged here; the dashboard, integration, and setup flow are adapted for Drukpa Chat. Get the original authors' permission where required, retain applicable licenses, and disclose your own and adapted contributions for coursework. Do not present another person's work as solely your own.
 
 Review each upstream model card and license before redistributing or using a model commercially. Machine translation can be inaccurate; fluent Dzongkha review is recommended for important content.
+=======
+# Drukpa-chat-1
+>>>>>>> a8654303f29fa9a4099c7958f04b56d32513d675
