@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Tibetan:wght@400;500;600&display=swap");
+
+:root { --ink:#182e35; --muted:#627571; --green:#174b42; --gold:#e3b75d; }
+html, body, [class*="css"] { font-family:"DM Sans","Noto Sans Tibetan",sans-serif; }
+.stApp { min-height:100vh; background-image:linear-gradient(rgba(248,247,239,.58),rgba(244,246,239,.68)),url('/app/static/bhutan_background.jpg'); background-size:cover; background-position:center; background-attachment:fixed; }
+.stAppViewContainer, .stMain { background:transparent; }
+header[data-testid="stHeader"], #MainMenu, footer { visibility:hidden; }
+.block-container { max-width:1120px; padding-top:1.8rem; padding-bottom:6rem; }
+[data-testid="stSidebar"] { background:#f6f7f1; border-right:1px solid #d5dfd4; }
+[data-testid="stSidebar"] h1 { color:var(--green); font-size:1.42rem; }
+[data-testid="stSidebar"] [data-testid="stMetric"] { padding:.7rem; border:1px solid #d9e2d9; border-radius:14px; background:#fff; }
+.topbar { display:flex; align-items:center; gap:1.1rem; padding:1.05rem 1.35rem; border-radius:22px; background:#fff; border:1px solid #d7e1d7; box-shadow:0 14px 40px rgba(22,49,43,.12); margin-bottom:1.2rem; }
+.brand-logo { width:92px; height:92px; object-fit:contain; border-radius:17px; background:#f7f5eb; }
+.brand-copy h1 { margin:.2rem 0; color:#1c393a; font-size:1.75rem; letter-spacing:-.035em; }
+.brand-copy p { margin:0; color:#536b66; }
+.eyebrow { color:#9c7224; font-size:.7rem; font-weight:700; letter-spacing:.14em; }
+.welcome { padding:1.2rem 1.45rem; border:1px solid #d9e2d9; border-left:5px solid var(--gold); border-radius:18px; background:#fff; margin:1rem 0; box-shadow:0 8px 28px rgba(22,49,43,.08); }
+.welcome-label { color:var(--green); font-size:.72rem; font-weight:700; letter-spacing:.12em; }
+.welcome-dz { margin:.5rem 0; font-family:"Noto Sans Tibetan","Microsoft Himalaya",serif; font-size:1.2rem; line-height:2; color:var(--ink); }
+.welcome p { color:var(--muted); margin:0; }
+[data-testid="stChatMessage"] { border:1px solid #dae4d9; border-radius:18px; background:#fff; padding:1rem 1.1rem; box-shadow:0 6px 20px rgba(22,49,43,.07); }
+[data-testid="stChatMessage"] p { color:var(--ink); line-height:1.85; }
+[data-testid="stChatInput"] { border-radius:15px; background:#fff; }
+[data-testid="stChatInput"] textarea { font-family:"Noto Sans Tibetan","Microsoft Himalaya",serif; line-height:1.9; }
+.stButton button, [data-testid="stDownloadButton"] button { min-height:46px; border-radius:13px; border:1px solid #cdddcf; background:#fff; color:#254b42; transition:transform .15s ease, box-shadow .15s ease; }
+.stButton button:hover, [data-testid="stDownloadButton"] button:hover { transform:translateY(-1px); border-color:#83a895; box-shadow:0 5px 15px #173c3b12; color:var(--green); }
+.stButton button[kind="primary"] { background:#176b55; border-color:#176b55; color:white; }
+.footer-note { margin-top:2rem; text-align:center; color:#526761; font-size:.78rem; }
+@media (max-width:640px) { .block-container { padding:1rem .8rem 5rem; } .topbar { padding:.8rem; gap:.8rem; } .brand-logo { width:68px; height:68px; } .brand-copy h1 { font-size:1.35rem; } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none !important; } }
